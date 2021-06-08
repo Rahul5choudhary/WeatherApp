@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(clear.jpg);
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-position: top center;
+            overflow: hidden;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .app-main {
+            width: 50vh;
+            margin: 100px auto;
+            background-color: rgb(240, 248, 255, 0.6);
+            padding: 20px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .weather-body {
+            display: none;
+            /* width:50vh; */
+            margin-bottom: 10px auto;
+            /* background-color:rgba(255, 51, 0, 0.6); */
+            /* padding: 10px; */
+            /* text-align: center; */
+        }
+
+        .input-box {
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            border: none;
+            outline: none;
+            color: #582233;
+            font-size: 1.2rem;
+            height: 50px;
+            border-radius: 5.5px;
+            text-align: center;
+        }
+
+        .input-box:focus {
+            background-color: white;
+        }
+
+        .weather-body {
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.6);
+            color: #582233;
+            padding: 20px;
+            line-height: 2rem;
+            border-radius: 10px;
+            height: 50vh;
+        }
+
+        .location_details {
+            font-weight: bold;
+        }
+
+        .weather-status {
+            padding: 20px;
+        }
+
+        .temp {
+            font-size: 50pt;
+            font-weight: 700;
+            margin: 20px 0;
+            text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .min-max,
+        .weather {
+            font-size: 12pt;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="app-main">
+
+
+        <div class="serchInputbox">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter city name">
+        </div>
+
+        <div class="weather-body">
+            <div class="location_details">
+                <div class="cityname" id="cityname">Katihar, IN</div>
+                <div class="date" id="date">10 June (Wednesday), 2020</div>
+            </div>
+
+            <div class="weather-status">
+                <div class="temp" id="temp">34&deg;C</div>
+                <!-- <div class="min-max" id="temp_max"></div> -->
+                <div class="min-max" id="max_min">34&deg;C (max) /33&deg;C (min)</div>
+                <div class="weather" id="weather">Clear</div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
