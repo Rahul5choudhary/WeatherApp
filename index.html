@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Autocomlete.css">
     <style>
         * {
             margin: 0;
@@ -87,6 +88,12 @@
             font-size: 12pt;
             font-weight: 600;
         }
+        .autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  /* color:DodgerBlue !important */
+}
+  
     </style>
 </head>
 
@@ -96,10 +103,11 @@
 
     <div class="app-main">
 
-
-        <div class="serchInputbox">
-            <input type="text" id="input-box" class="input-box" placeholder="Enter city name">
+<div class="autocomplete"   style="width:300px;">
+        
+            <input type="text" id="input-box" class="input-box"  placeholder="Enter city name">
         </div>
+        
 
         <div class="weather-body">
             <div class="location_details">
@@ -119,6 +127,7 @@
 
     </div>
     <script src="in.js"></script>
+    <script src="Autocomplete.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
